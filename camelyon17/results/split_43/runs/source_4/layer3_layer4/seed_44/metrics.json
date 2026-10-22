@@ -1,0 +1,185 @@
+{
+  "config": {
+    "name": "colab_full_split_43",
+    "description": "Full 455954 images, three patient partitions and three model seeds, all five source hospitals and four depths; main project only.",
+    "dataset_revision": "d784d5344ba6c967f83f9f3d9b2f1e2a4d6eb78f",
+    "expected_images": 455954,
+    "partition_seeds": [
+      42,
+      43,
+      44
+    ],
+    "per_slide_class": null,
+    "sampling_seed": 42,
+    "sources": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "targets": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "depths": [
+      "head",
+      "layer4",
+      "layer3_layer4",
+      "full"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "image_size": 96,
+    "batch_size": 128,
+    "epochs": 20,
+    "early_stopping_patience": 5,
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "weight_decay": 0.0001,
+    "num_workers": 2,
+    "device": "cuda",
+    "require_cuda": true,
+    "augment": true,
+    "pretrained": true,
+    "amp": true,
+    "max_train_per_class": null,
+    "max_val_per_class": null,
+    "max_test_per_class": null,
+    "feature_batch_size": 128,
+    "image_digest_manifest": "data/full/image_digests.json",
+    "partition_seed": 43,
+    "manifest_path": "data/full/split_43/manifest.csv"
+  },
+  "source": "4",
+  "depth": "layer3_layer4",
+  "seed": 44,
+  "dataset_digest": "e348a0c121af811dbaad4dcea40d92e6a0fb2c800476d6a40e9db89bfb13f266",
+  "engine_version": 2,
+  "torch_version": "2.11.0+cu130",
+  "signature": "a3a3a6eeeaa0768ba5eb796e06dcd9cb7300b6eca6968c80e05cab2daf4337fb",
+  "status": "complete",
+  "train_n": 107621,
+  "val_n": 16440,
+  "test_n": 61541,
+  "trainable_parameters": 22067202,
+  "total_parameters": 23512130,
+  "initial_state_digest": "f557e210363e479560170919dc9efafb9519e5fe8f870ce00c4400e4e8c4ea08",
+  "checkpoint": "best.pt",
+  "checkpoint_state_digest": "4fcb5bb1a632d7793ee6ea5af30d2b80cfdcd99e6531219ddc470376a6a92fcf",
+  "model_spec": {
+    "architecture": "resnet50",
+    "classes": [
+      "non-tumor",
+      "tumor"
+    ],
+    "weights": "IMAGENET1K_V2",
+    "head_initialization_seed": 44,
+    "frozen_batchnorm": "eval; running statistics and affine parameters frozen"
+  },
+  "selection": {
+    "split": "source_val",
+    "center": "4",
+    "criterion": "minimum cross-entropy loss",
+    "best_epoch": 1,
+    "best_val_loss": 0.04092072322964668,
+    "epochs_completed": 6,
+    "target_test_used_for_selection": false
+  },
+  "reloaded_validation": {
+    "n": 16440,
+    "roc_auc": 0.9287624295448503,
+    "accuracy": 0.9902676399026764,
+    "loss": 0.04092072322964668,
+    "class_counts": {
+      "0": 16271,
+      "1": 169
+    }
+  },
+  "reload_verified": true,
+  "test_by_center": {
+    "0": {
+      "n": 17953,
+      "roc_auc": 0.9854290591875026,
+      "accuracy": 0.9552720993705788,
+      "loss": 0.13377797603607178,
+      "class_counts": {
+        "0": 5268,
+        "1": 12685
+      },
+      "role": "OOD"
+    },
+    "1": {
+      "n": 2587,
+      "roc_auc": 0.709557509996525,
+      "accuracy": 0.9203710862002319,
+      "loss": 0.2549384534358978,
+      "class_counts": {
+        "0": 2418,
+        "1": 169
+      },
+      "role": "OOD"
+    },
+    "2": {
+      "n": 8982,
+      "roc_auc": 0.9389479126363447,
+      "accuracy": 0.8740814963259853,
+      "loss": 0.4152543246746063,
+      "class_counts": {
+        "0": 6211,
+        "1": 2771
+      },
+      "role": "OOD"
+    },
+    "3": {
+      "n": 9358,
+      "roc_auc": 0.8214405044190558,
+      "accuracy": 0.9812994229536226,
+      "loss": 0.09736672043800354,
+      "class_counts": {
+        "0": 9278,
+        "1": 80
+      },
+      "role": "OOD"
+    },
+    "4": {
+      "n": 22661,
+      "roc_auc": 0.8448322560984322,
+      "accuracy": 0.773575746877896,
+      "loss": 0.9934387803077698,
+      "class_counts": {
+        "0": 16688,
+        "1": 5973
+      },
+      "role": "ID"
+    }
+  },
+  "runtime_seconds": 415.68838900793344,
+  "resume": {
+    "epoch_boundary_only": true,
+    "resumed_from_epoch": 0,
+    "checkpoint_schema": 1
+  },
+  "environment": {
+    "torch": "2.11.0+cu130",
+    "device": "cuda",
+    "platform": "Linux-5.15.0-190-generic-x86_64-with-glibc2.35",
+    "amp": true,
+    "cuda_version": "13.0",
+    "cublas_workspace_config": ":4096:8",
+    "determinism": "seeded deterministic algorithms with warn_only=True; MPS best effort"
+  },
+  "sampling": {
+    "seed": 42,
+    "same_inputs_across_depths": true,
+    "train_sample_ids_digest": "5b297a2f4298161b93d91517a9810b41abe34743f8fa482623a504c95c1b49e3",
+    "val_sample_ids_digest": "46f63f5679fa7856f89a3fcee140e607e5cfd5b86ca8aa4d4347d139b3507d48",
+    "test_sample_ids_digest": "f055cccf48f2b10b32beae8468b724059ec7e7a53b21c7b3b0f299aa82ba64f8"
+  }
+}

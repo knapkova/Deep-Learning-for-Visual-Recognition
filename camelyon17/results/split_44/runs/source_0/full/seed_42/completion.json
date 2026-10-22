@@ -1,0 +1,11 @@
+{
+  "signature": "00504867a5f8a241bf8157fba97571cbfbcf5eb59bb07209326adefaee461b01",
+  "status": "complete",
+  "artifacts": {
+    "run.json": "0b715c8313cf1baca4b88811a7f2fbd2f3336f6ed9fc7a7ee1c94b2399d68c30",
+    "best.pt": "9e5d38b26e249c4890ebfebdfaad1a3eb20d86d91a9dd370f4dd02d7d6f16df8",
+    "history.csv": "abe6d4f566c0278b2a63dd6ffadd3b769d4024b5a884a96a9dd7d546b644a26d",
+    "predictions.csv": "b72ee7d266bb00132e934f3c1b716799de3c8ee77b804676d0dd0c6e54bbfa17",
+    "metrics.json": "1b37c0a15f70466ed57106aac81905f05ab0535f398bad731e4102a6b2892cca"
+  }
+}

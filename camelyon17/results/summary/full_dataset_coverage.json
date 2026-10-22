@@ -1,0 +1,23 @@
+[
+  {
+    "split_seed": 42,
+    "expected_images": 455954,
+    "counted_images": 455954,
+    "provenance_images": 455954,
+    "verified": true
+  },
+  {
+    "split_seed": 43,
+    "expected_images": 455954,
+    "counted_images": 455954,
+    "provenance_images": 455954,
+    "verified": true
+  },
+  {
+    "split_seed": 44,
+    "expected_images": 455954,
+    "counted_images": 455954,
+    "provenance_images": 455954,
+    "verified": true
+  }
+]

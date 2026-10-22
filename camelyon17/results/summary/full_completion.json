@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "complete": true,
+  "expected_runs": 180,
+  "complete_runs": 180,
+  "invalid_runs": 0,
+  "missing_runs": 0,
+  "patient_split_seeds": [
+    42,
+    43,
+    44
+  ],
+  "model_seeds": [
+    42,
+    43,
+    44
+  ],
+  "expected_images_per_split": 455954,
+  "dataset_coverage": [
+    {
+      "split_seed": 42,
+      "expected_images": 455954,
+      "counted_images": 455954,
+      "provenance_images": 455954,
+      "verified": true
+    },
+    {
+      "split_seed": 43,
+      "expected_images": 455954,
+      "counted_images": 455954,
+      "provenance_images": 455954,
+      "verified": true
+    },
+    {
+      "split_seed": 44,
+      "expected_images": 455954,
+      "counted_images": 455954,
+      "provenance_images": 455954,
+      "verified": true
+    }
+  ],
+  "issues": [],
+  "hospital_metric_rows": 900,
+  "winner_frequency_scope": "post-hoc target-test observed winners of within-split model-seed means; fractional tie credit; not a deployment selection rule",
+  "variability_scope": "sample SD across model seeds within each fixed patient split; sample SD of split means across patient splits; no confidence intervals",
+  "dependence_warning": "Patient splits reuse the same patients; ordered hospital pairs share hospitals; patches are not independent patients; no p-values or independent-patch CI",
+  "loss_scope": "stored logit-based cross-entropy retained; not reconstructed from potentially saturated exported probabilities",
+  "distance_scope": "fixed ImageNet avgpool; mean of marginal 1D W1, not joint 2048D Wasserstein/W2; raw label-free, balanced/classconditional use labels descriptively",
+  "coral_included": false,
+  "checkpoint_bytes_read": false
+}

@@ -1,0 +1,22 @@
+# Large experiment files stay outside Git.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.npz
+*.npy
+*.zip
+*.tar
+*.tar.gz
+__pycache__/
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+code/data/
+code/results/
+code/new_results/
+reference_cache/
+**/predictions.csv
+**/manifest.csv

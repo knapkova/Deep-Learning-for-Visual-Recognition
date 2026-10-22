@@ -1,0 +1,69 @@
+{
+  "signature": "651e0001b1693c53aa03a36cdc806bcaee5be9eab473e74d0a7d9ecf5888de1a",
+  "spec": {
+    "config": {
+      "name": "colab_full_split_42",
+      "description": "Full 455954 images, three patient partitions and three model seeds, all five source hospitals and four depths; main project only.",
+      "dataset_revision": "d784d5344ba6c967f83f9f3d9b2f1e2a4d6eb78f",
+      "expected_images": 455954,
+      "partition_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_slide_class": null,
+      "sampling_seed": 42,
+      "sources": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "targets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "depths": [
+        "head",
+        "layer4",
+        "layer3_layer4",
+        "full"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "image_size": 96,
+      "batch_size": 128,
+      "epochs": 20,
+      "early_stopping_patience": 5,
+      "backbone_lr": 0.0001,
+      "head_lr": 0.001,
+      "weight_decay": 0.0001,
+      "num_workers": 2,
+      "device": "cuda",
+      "require_cuda": true,
+      "augment": true,
+      "pretrained": true,
+      "amp": true,
+      "max_train_per_class": null,
+      "max_val_per_class": null,
+      "max_test_per_class": null,
+      "feature_batch_size": 128,
+      "image_digest_manifest": "data/full/image_digests.json",
+      "partition_seed": 42,
+      "manifest_path": "data/full/split_42/manifest.csv"
+    },
+    "source": "4",
+    "depth": "layer4",
+    "seed": 43,
+    "dataset_digest": "ac16724f2db412e8188245201db09464ab7a5354099d04da5134e10354bb2f5a",
+    "engine_version": 2,
+    "torch_version": "2.11.0+cu130"
+  }
+}

@@ -1,0 +1,13 @@
+# Install a matching CUDA-enabled torch/torchvision pair for your GPU first.
+# These are minimum requirements, not a lockfile for the archived run.
+torch>=2.5
+torchvision>=0.20
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.5
+matplotlib>=3.9
+Pillow>=10
+pyarrow>=17
+requests>=2.32
+joblib>=1.3
